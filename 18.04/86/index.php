@@ -1,16 +1,24 @@
 <?php
-	namespace Modules\Shop\Core;
+	namespace Core\Data;
 	
-	class Cart
+	class Controller
 	{
 		
 	}
 ?>
 <?php
-	namespace Modules\Shop;
+	namespace Core\Data;
 	
-	class UserCart extends \Core\Cart
+	class Model
 	{
 		
 	}
+?>
+
+
+<?php
+	namespace Core\Data;
+	
+	$controller = new Controller;
+	$model      = new Model;
 ?>
