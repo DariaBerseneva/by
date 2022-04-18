@@ -1,17 +1,14 @@
 <?php
-	namespace Core\Admin;
+	namespace Project;
 	
-	class Controller
+	use \Core\Admin\Model;
+	use \Core\Users\Storage\Data;
+	class Test
 	{
-		
-	}
-?>
-<?php
-	namespace Users;
-	use \Core\Admin\Controller;
-	
-	class Page extends Controller
-	{
-		
+		public function __construct()
+		{
+			$model = new Model;
+			$data  = new Data;
+		}
 	}
 ?>
