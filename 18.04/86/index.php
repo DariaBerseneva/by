@@ -1,7 +1,5 @@
 <?php
-	require_once 'core/controller.php';
-	require_once 'project/controller.php';
+	namespace Admin;
 	
-	$coreController = new \Core\Controller;
-	$projectController = new \Project\Controller;
+	new Controller;
 ?>
