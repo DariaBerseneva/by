@@ -1,7 +1,12 @@
 <?php
-	namespace Modules\Shop\Cart;
+	namespace Modules\Shop;
 	
-	class cart
+	class Cart
+	{
+		
+	}
+
+	class UserCart extends Cart
 	{
 		
 	}
