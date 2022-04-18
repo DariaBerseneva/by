@@ -1,13 +1,7 @@
 <?php
-	namespace Project\Data;
-	 use  \Controller\Page as ControllerPage;
-	 use \Model\Page as ModelPage;
-	class Test
-	{
-		public function __construct()
-		{
-			$pageController  = new ControllerPage;
-			$pageModel       = new ModelPage;
-		}
-	}
+	spl_autoload_register(); // включаем автозагрузку
+	
+	$obj1 = new Core\User;
+	$obj2 = new Core\Admin\Controller;
+	$obj3 = new Project\User\Data;
 ?>
