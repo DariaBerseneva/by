@@ -1,7 +1,9 @@
 <?php
-	spl_autoload_register(); // включаем автозагрузку
-	
-	$obj1 = new Core\User;
-	$obj2 = new Core\Admin\Controller;
-	$obj3 = new Project\User\Data;
+	spl_autoload_register(function($class) {
+		$root = $_SERVER['DOCUMENT_ROOT'];
+		$ds = DIRECTORY_SEPARATOR;
+		
+		$filename = $root . $ds . str_replace('\\', $ds, $class) . '.php';
+		require($filename);
+	});
 ?>
