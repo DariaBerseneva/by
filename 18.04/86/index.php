@@ -1,14 +1,11 @@
 <?php
-	namespace Project;
-	
-	use \Core\Admin\Model;
-	use \Core\Users\Storage\Data;
-	class Test
+	namespace Core\Storage;
+	use DataBase;
+	class Model
 	{
 		public function __construct()
 		{
-			$model = new Model;
-			$data  = new Data;
+			$database  = new DataBase;
 		}
 	}
 ?>
